@@ -27,7 +27,6 @@ print ('------------------------------------')
 print("Winner: ", newdf['Candidate'][newdf['Percent'] == newdf['Percent'].max()].iloc[0])
 print ('------------------------------------')
 
-
 # create a txt file with results
 print("Results", file = open("Election.txt", "a"))
 print("-------------------------", file = open("Election.txt", "a"))
