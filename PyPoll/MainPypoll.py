@@ -8,7 +8,7 @@ pypollrow = os.path.join('C:/Users/connn/Desktop', ".\\pypoll.csv")
 df = pd.read_csv(pypollrow)
 
 # Print count of total votes
-print("Total votes: ", df['Voter ID'].count())
+# print("Total votes: ", df['Voter ID'].count())
 
 # count votes per candidate, create new dataframe
 newdf = df.groupby("Candidate")["Voter ID"].count().reset_index(name = "Count").sort_values("Count", ascending = False)
