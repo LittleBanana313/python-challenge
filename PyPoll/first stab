@@ -1,0 +1,11 @@
+import os
+import pandas as pd
+
+# set path for csv
+pypollrow = os.path.join('C:/Users/connn/Desktop', ".\\pypoll.csv")
+
+# read csv
+df = pd.read_csv(pypollrow)
+
+# Print count of total votes
+print("Total votes: ", df['Voter ID'].count())
